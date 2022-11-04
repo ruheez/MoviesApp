@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs"); -%>
+
+<form action="/" method="post">
+  <label for="movieInput">Movie Name: </label>
+  <input id="movieInput" type="text" name="movieName" placeholder="Write here...">
+  <button type="submit" class="btn-go">Go</button>
+</form>
+
+  <div class="data">
+    <h1>Title: <%=title%>.</h1>
+    <p>Released: <%=released%>.</p>
+    <p>Plot: <%=plot%>.</p>
+    <p>Country/Countries of production: <%=country%>.</p>
+    <p>BoxOffice: <%=moneyMade%>.</p>
+    <img src=<%=posterUrl%> alt="movie-poster">
+  </div>
+
+<%- include("partials/footer.ejs"); -%>
